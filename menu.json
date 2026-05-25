@@ -1,0 +1,599 @@
+[
+  {
+    "id": "shawarma",
+    "category": "syrian",
+    "name": {
+      "de": "Hähnchen Shawarma",
+      "en": "Chicken Shawarma",
+      "ar": "شاورما دجاج"
+    },
+    "description": {
+      "de": "Mariniertes Hähnchen mit Knoblauchsauce, Gurken und Brot.",
+      "en": "Marinated chicken with garlic sauce, pickles and bread.",
+      "ar": "دجاج متبل مع صلصة الثوم والمخللات والخبز."
+    },
+    "price": "€ --",
+    "tags": [
+      "chicken",
+      "spicy"
+    ],
+    "allergens": [
+      "gluten",
+      "dairy"
+    ]
+  },
+  {
+    "id": "falafel",
+    "category": "syrian",
+    "name": {
+      "de": "Falafel Teller",
+      "en": "Falafel Plate",
+      "ar": "طبق فلافل"
+    },
+    "description": {
+      "de": "Knusprige Falafel mit Tahini, Salat und Fladenbrot.",
+      "en": "Crispy falafel with tahini, salad and flatbread.",
+      "ar": "فلافل مقرمشة مع طحينة وسلطة وخبز."
+    },
+    "price": "€ --",
+    "tags": [
+      "vegan",
+      "vegetarian"
+    ],
+    "allergens": [
+      "gluten"
+    ]
+  },
+  {
+    "id": "hummus",
+    "category": "syrian",
+    "name": {
+      "de": "Hummus",
+      "en": "Hummus",
+      "ar": "حمص"
+    },
+    "description": {
+      "de": "Cremiger Kichererbsendip mit Olivenöl und Gewürzen.",
+      "en": "Creamy chickpea dip with olive oil and spices.",
+      "ar": "حمص كريمي بزيت الزيتون والبهارات."
+    },
+    "price": "€ --",
+    "tags": [
+      "vegan",
+      "vegetarian"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "kebab",
+    "category": "syrian",
+    "name": {
+      "de": "Aleppo Kebab",
+      "en": "Aleppo Kebab",
+      "ar": "كباب حلبي"
+    },
+    "description": {
+      "de": "Gegrilltes Hackfleisch mit Gewürzen, Reis und Salat.",
+      "en": "Grilled minced meat with spices, rice and salad.",
+      "ar": "لحم مفروم مشوي مع بهارات وأرز وسلطة."
+    },
+    "price": "€ --",
+    "tags": [
+      "meat",
+      "beef",
+      "spicy"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "manakish",
+    "category": "syrian",
+    "name": {
+      "de": "Manakish Za’atar",
+      "en": "Za’atar Manakish",
+      "ar": "مناقيش زعتر"
+    },
+    "description": {
+      "de": "Fladenbrot mit Za’atar, Olivenöl und Sesam.",
+      "en": "Flatbread with za’atar, olive oil and sesame.",
+      "ar": "خبز بالزعتر وزيت الزيتون والسمسم."
+    },
+    "price": "€ --",
+    "tags": [
+      "vegan",
+      "vegetarian"
+    ],
+    "allergens": [
+      "gluten"
+    ]
+  },
+  {
+    "id": "fatteh",
+    "category": "syrian",
+    "name": {
+      "de": "Fatteh",
+      "en": "Fatteh",
+      "ar": "فتة"
+    },
+    "description": {
+      "de": "Kichererbsen, Joghurt, geröstetes Brot und Nüsse.",
+      "en": "Chickpeas, yogurt, toasted bread and nuts.",
+      "ar": "حمص ولبن وخبز محمص ومكسرات."
+    },
+    "price": "€ --",
+    "tags": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "nuts",
+      "gluten",
+      "dairy"
+    ]
+  },
+  {
+    "id": "baklava",
+    "category": "syrian",
+    "name": {
+      "de": "Baklava",
+      "en": "Baklava",
+      "ar": "بقلاوة"
+    },
+    "description": {
+      "de": "Süßes Blätterteiggebäck mit Pistazien und Sirup.",
+      "en": "Sweet pastry with pistachios and syrup.",
+      "ar": "حلوى بطبقات رقيقة مع فستق وقطر."
+    },
+    "price": "€ --",
+    "tags": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "nuts",
+      "gluten",
+      "dairy"
+    ]
+  },
+  {
+    "id": "pizza-zatar",
+    "category": "pizza",
+    "name": {
+      "de": "Pizza Zatar",
+      "en": "Zatar Pizza",
+      "ar": "بيتزا زعتر"
+    },
+    "description": {
+      "de": "Pizza mit Käse, Oliven, Paprika und levantinischen Kräutern.",
+      "en": "Pizza with cheese, olives, peppers and Levantine herbs.",
+      "ar": "بيتزا بالجبن والزيتون والفلفل والأعشاب الشامية."
+    },
+    "price": "€ --",
+    "tags": [
+      "pizza",
+      "vegetarian"
+    ],
+    "allergens": [
+      "gluten",
+      "dairy"
+    ]
+  },
+  {
+    "id": "pizza-chicken",
+    "category": "pizza",
+    "name": {
+      "de": "Chicken Pizza",
+      "en": "Chicken Pizza",
+      "ar": "بيتزا دجاج"
+    },
+    "description": {
+      "de": "Pizza mit Hähnchen, Käse und würziger Tomatensauce.",
+      "en": "Pizza with chicken, cheese and spicy tomato sauce.",
+      "ar": "بيتزا بالدجاج والجبن وصلصة طماطم متبلة."
+    },
+    "price": "€ --",
+    "tags": [
+      "pizza",
+      "chicken"
+    ],
+    "allergens": [
+      "gluten",
+      "dairy"
+    ]
+  },
+  {
+    "id": "burger-beef",
+    "category": "burger",
+    "name": {
+      "de": "Orient Beef Burger",
+      "en": "Orient Beef Burger",
+      "ar": "برغر لحم شرقي"
+    },
+    "description": {
+      "de": "Rindfleisch, Salat, Tomate, Gurken und würzige Sauce.",
+      "en": "Beef, lettuce, tomato, pickles and spiced sauce.",
+      "ar": "لحم بقري، خس، طماطم، مخلل وصلصة متبلة."
+    },
+    "price": "€ --",
+    "tags": [
+      "burger",
+      "beef",
+      "meat"
+    ],
+    "allergens": [
+      "gluten",
+      "dairy"
+    ]
+  },
+  {
+    "id": "burger-falafel",
+    "category": "burger",
+    "name": {
+      "de": "Falafel Burger",
+      "en": "Falafel Burger",
+      "ar": "برغر فلافل"
+    },
+    "description": {
+      "de": "Falafel-Patty, Tahini, Salat und frische Kräuter.",
+      "en": "Falafel patty, tahini, salad and fresh herbs.",
+      "ar": "قرص فلافل مع طحينة وسلطة وأعشاب."
+    },
+    "price": "€ --",
+    "tags": [
+      "burger",
+      "vegan",
+      "vegetarian"
+    ],
+    "allergens": [
+      "gluten"
+    ]
+  },
+  {
+    "id": "tea",
+    "category": "drinks",
+    "name": {
+      "de": "Syrischer Tee",
+      "en": "Syrian Tea",
+      "ar": "شاي سوري"
+    },
+    "description": {
+      "de": "Schwarzer Tee mit Minze oder Kardamom.",
+      "en": "Black tea with mint or cardamom.",
+      "ar": "شاي أسود بالنعناع أو الهيل."
+    },
+    "price": "€ --",
+    "tags": [
+      "drinks",
+      "vegan"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "lemonade",
+    "category": "drinks",
+    "name": {
+      "de": "Minz-Limonade",
+      "en": "Mint Lemonade",
+      "ar": "ليموناضة بالنعناع"
+    },
+    "description": {
+      "de": "Frische Zitrone, Minze und Eis.",
+      "en": "Fresh lemon, mint and ice.",
+      "ar": "ليمون طازج ونعناع وثلج."
+    },
+    "price": "€ --",
+    "tags": [
+      "drinks",
+      "vegan"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "manakish-cheese",
+    "category": "syrian",
+    "name": {
+      "de": "Manakish Käse",
+      "en": "Cheese Manakish",
+      "ar": "مناقيش جبنة"
+    },
+    "description": {
+      "de": "Fladenbrot mit geschmolzenem Käse.",
+      "en": "Flatbread with melted cheese.",
+      "ar": "خبز بالجبنة الذائبة."
+    },
+    "price": "€ --",
+    "tags": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "gluten",
+      "dairy"
+    ]
+  },
+  {
+    "id": "manakish-muhammara",
+    "category": "syrian",
+    "name": {
+      "de": "Manakish Muhammara",
+      "en": "Muhammara Manakish",
+      "ar": "مناقيش محمرة"
+    },
+    "description": {
+      "de": "Würzige Paprika-Walnuss-Paste auf frischem Teig.",
+      "en": "Spiced red pepper and walnut paste on fresh dough.",
+      "ar": "عجينة طازجة مع محمرة الجوز والفلفل."
+    },
+    "price": "€ --",
+    "tags": [
+      "vegetarian",
+      "spicy"
+    ],
+    "allergens": [
+      "gluten",
+      "nuts"
+    ]
+  },
+  {
+    "id": "manakish-meat",
+    "category": "syrian",
+    "name": {
+      "de": "Manakish Lahme",
+      "en": "Meat Manakish",
+      "ar": "مناقيش لحم"
+    },
+    "description": {
+      "de": "Fein gewürztes Hackfleisch mit Tomate und Kräutern.",
+      "en": "Spiced minced meat with tomato and herbs.",
+      "ar": "لحم متبل مع طماطم وأعشاب."
+    },
+    "price": "€ --",
+    "tags": [
+      "meat",
+      "beef"
+    ],
+    "allergens": [
+      "gluten"
+    ]
+  },
+  {
+    "id": "manakish-spinach",
+    "category": "syrian",
+    "name": {
+      "de": "Manakish Spinat",
+      "en": "Spinach Manakish",
+      "ar": "مناقيش سبانخ"
+    },
+    "description": {
+      "de": "Spinat, Zwiebeln, Sumach und Olivenöl.",
+      "en": "Spinach, onions, sumac and olive oil.",
+      "ar": "سبانخ وبصل وسماق وزيت زيتون."
+    },
+    "price": "€ --",
+    "tags": [
+      "vegan",
+      "vegetarian"
+    ],
+    "allergens": [
+      "gluten"
+    ]
+  },
+  {
+    "id": "manakish-sujuk",
+    "category": "syrian",
+    "name": {
+      "de": "Manakish Sujuk",
+      "en": "Sujuk Manakish",
+      "ar": "مناقيش سجق"
+    },
+    "description": {
+      "de": "Würziger Sujuk mit Käse und Tomatensauce.",
+      "en": "Spicy sujuk with cheese and tomato sauce.",
+      "ar": "سجق حار مع جبنة وصلصة طماطم."
+    },
+    "price": "€ --",
+    "tags": [
+      "meat",
+      "spicy"
+    ],
+    "allergens": [
+      "gluten",
+      "dairy"
+    ]
+  },
+  {
+    "id": "manakish-chicken",
+    "category": "syrian",
+    "name": {
+      "de": "Manakish Hähnchen",
+      "en": "Chicken Manakish",
+      "ar": "مناقيش دجاج"
+    },
+    "description": {
+      "de": "Hähnchenstücke mit orientalischen Gewürzen.",
+      "en": "Chicken pieces with oriental spices.",
+      "ar": "قطع دجاج مع بهارات شرقية."
+    },
+    "price": "€ --",
+    "tags": [
+      "chicken"
+    ],
+    "allergens": [
+      "gluten"
+    ]
+  },
+  {
+    "id": "manakish-olive",
+    "category": "syrian",
+    "name": {
+      "de": "Manakish Oliven",
+      "en": "Olive Manakish",
+      "ar": "مناقيش زيتون"
+    },
+    "description": {
+      "de": "Oliven, Kräuter, Sesam und Olivenöl.",
+      "en": "Olives, herbs, sesame and olive oil.",
+      "ar": "زيتون وأعشاب وسمسم وزيت زيتون."
+    },
+    "price": "€ --",
+    "tags": [
+      "vegan",
+      "vegetarian"
+    ],
+    "allergens": [
+      "gluten"
+    ]
+  },
+  {
+    "id": "manakish-mix",
+    "category": "syrian",
+    "name": {
+      "de": "Manakish Mix",
+      "en": "Mixed Manakish",
+      "ar": "مناقيش مشكلة"
+    },
+    "description": {
+      "de": "Kleine Auswahl mit Za’atar, Käse und Muhammara.",
+      "en": "Small selection with za’atar, cheese and muhammara.",
+      "ar": "تشكيلة صغيرة بالزعتر والجبنة والمحمرة."
+    },
+    "price": "€ --",
+    "tags": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "gluten",
+      "dairy",
+      "nuts"
+    ]
+  },
+  {
+    "id": "manakish-labneh",
+    "category": "syrian",
+    "name": {
+      "de": "Manakish Labneh",
+      "en": "Labneh Manakish",
+      "ar": "مناقيش لبنة"
+    },
+    "description": {
+      "de": "Labneh, Minze, Gurke und Olivenöl.",
+      "en": "Labneh, mint, cucumber and olive oil.",
+      "ar": "لبنة ونعناع وخيار وزيت زيتون."
+    },
+    "price": "€ --",
+    "tags": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "gluten",
+      "dairy"
+    ]
+  },
+  {
+    "id": "fatayer-spinach",
+    "category": "syrian",
+    "name": {
+      "de": "Fatayer Spinat",
+      "en": "Spinach Fatayer",
+      "ar": "فطاير سبانخ"
+    },
+    "description": {
+      "de": "Teigtaschen mit Spinat, Zwiebel und Sumach.",
+      "en": "Pastry pockets with spinach, onion and sumac.",
+      "ar": "فطائر محشوة بالسبانخ والبصل والسماق."
+    },
+    "price": "€ --",
+    "tags": [
+      "vegan",
+      "vegetarian"
+    ],
+    "allergens": [
+      "gluten"
+    ]
+  },
+  {
+    "id": "fatayer-cheese",
+    "category": "syrian",
+    "name": {
+      "de": "Fatayer Käse",
+      "en": "Cheese Fatayer",
+      "ar": "فطاير جبنة"
+    },
+    "description": {
+      "de": "Goldbraune Teigtaschen mit Käsefüllung.",
+      "en": "Golden pastry pockets with cheese filling.",
+      "ar": "فطائر ذهبية محشوة بالجبنة."
+    },
+    "price": "€ --",
+    "tags": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "gluten",
+      "dairy"
+    ]
+  },
+  {
+    "id": "fatayer-meat",
+    "category": "syrian",
+    "name": {
+      "de": "Fatayer Fleisch",
+      "en": "Meat Fatayer",
+      "ar": "فطاير لحم"
+    },
+    "description": {
+      "de": "Kleine Teigtaschen mit gewürztem Hackfleisch.",
+      "en": "Small pastry pockets with spiced minced meat.",
+      "ar": "فطائر صغيرة محشوة بلحم متبل."
+    },
+    "price": "€ --",
+    "tags": [
+      "meat",
+      "beef"
+    ],
+    "allergens": [
+      "gluten"
+    ]
+  },
+  {
+    "id": "fatayer-chicken",
+    "category": "syrian",
+    "name": {
+      "de": "Fatayer Hähnchen",
+      "en": "Chicken Fatayer",
+      "ar": "فطاير دجاج"
+    },
+    "description": {
+      "de": "Gefüllt mit Hähnchen, Zwiebeln und milden Gewürzen.",
+      "en": "Filled with chicken, onions and mild spices.",
+      "ar": "محشوة بالدجاج والبصل والبهارات الخفيفة."
+    },
+    "price": "€ --",
+    "tags": [
+      "chicken"
+    ],
+    "allergens": [
+      "gluten"
+    ]
+  },
+  {
+    "id": "fatayer-muhammara",
+    "category": "syrian",
+    "name": {
+      "de": "Fatayer Muhammara",
+      "en": "Muhammara Fatayer",
+      "ar": "فطاير محمرة"
+    },
+    "description": {
+      "de": "Gefüllt mit Paprika-Walnuss-Paste.",
+      "en": "Filled with red pepper and walnut paste.",
+      "ar": "محشوة بالمحمرة والجوز."
+    },
+    "price": "€ --",
+    "tags": [
+      "vegetarian",
+      "spicy"
+    ],
+    "allergens": [
+      "gluten",
+      "nuts"
+    ]
+  }
+]
