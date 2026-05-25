@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html lang="de" dir="ltr">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Full menu with Syrian dishes, vegan options, chicken, meat, pizza, burgers and drinks." />
+  <meta name="description"
+    content="Full menu with Syrian dishes, vegan options, chicken, meat, pizza, burgers and drinks." />
   <title data-i18n="meta.menuTitle">Menu | Zatar Restaurant</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to content</a>
   <header class="site-header">
     <nav class="navbar container" aria-label="Main navigation">
-      <a href="index.html" class="brand"><span class="brand-mark">ز</span><span>Zatar</span></a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu"><span></span><span></span><span></span></button>
-      <div id="nav-menu" class="nav-menu">
+      <a href="index.html" class="brand glass-olive" aria-label="Zatar home">
+        <img src="assets/images/golden monogram.png" alt="Zatar monogram" class="brand-monogram" />
+        <span>Zatar</span>
+      </a>
+      <button class="nav-toggle glass-olive" aria-expanded="false" aria-controls="nav-menu"
+        aria-label="Open menu"><span></span><span></span><span></span></button>
+      <div id="nav-menu" class="nav-menu glass-olive">
         <a href="index.html" data-i18n="nav.home">Home</a>
         <a href="menu.html" data-i18n="nav.menu">Menu</a>
         <a href="index.html#contact" data-i18n="nav.contact">Contact</a>
-        <a href="impressum.html" data-i18n="nav.impressum">Impressum</a>
-        <a href="datenschutz.html" data-i18n="nav.privacy">Privacy</a>
+        <label class="sr-only" for="language-select" data-i18n="a11y.language">Choose language</label>
         <select id="language-select" class="language-select" aria-label="Choose language">
-          <option value="de">DE</option><option value="en">EN</option><option value="ar">AR</option>
+          <option value="de">DE</option>
+          <option value="en">EN</option>
+          <option value="ar">AR</option>
         </select>
       </div>
     </nav>
@@ -31,7 +39,8 @@
       <div class="container reveal">
         <p class="eyebrow" data-i18n="menu.eyebrow">Full menu</p>
         <h1 data-i18n="menu.title">Explore our menu</h1>
-        <p data-i18n="menu.subtitle">Filter Syrian dishes, pizza, burgers and drinks by preference or allergy information.</p>
+        <p data-i18n="menu.subtitle">Filter Syrian dishes, pizza, burgers and drinks by preference or allergy
+          information.</p>
       </div>
     </section>
 
@@ -55,10 +64,12 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <p>© <span id="year"></span> Zatar Restaurant</p>
-      <div><a href="impressum.html" data-i18n="nav.impressum">Impressum</a><a href="datenschutz.html" data-i18n="nav.privacy">Privacy</a></div>
+      <div><a href="impressum.html" data-i18n="nav.impressum">Impressum</a><a href="datenschutz.html"
+          data-i18n="nav.privacy">Privacy</a></div>
     </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
+
 </html>
