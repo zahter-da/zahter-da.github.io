@@ -4,10 +4,395 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Full menu with Syrian dishes, vegan options, chicken, meat, pizza, burgers and drinks." />
+  <meta name="description" content="Full menu with Manakish, Fatayer, Syrian plates, pizza and drinks." />
   <title data-i18n="meta.menuTitle">Menu | Zatar Restaurant</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .modern-filter-panel {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(112, 89, 54, 0.16);
+      border-radius: 28px;
+      padding: clamp(18px, 3vw, 28px);
+      margin-bottom: 28px;
+      background:
+        radial-gradient(circle at top left, rgba(182, 139, 65, 0.18), transparent 36%),
+        linear-gradient(135deg, rgba(255, 252, 242, 0.94), rgba(243, 236, 216, 0.86));
+      box-shadow: 0 24px 70px rgba(45, 33, 18, 0.12);
+      backdrop-filter: blur(14px);
+    }
+
+    .filter-panel-header,
+    .filter-section-title {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .filter-panel-header {
+      margin-bottom: 22px;
+    }
+
+    .filter-panel-header h2 {
+      margin: 4px 0 0;
+      font-size: clamp(1.35rem, 2.5vw, 2rem);
+    }
+
+    .filter-reset-link {
+      border: 0;
+      border-radius: 999px;
+      padding: 10px 16px;
+      background: rgba(47, 75, 43, 0.1);
+      color: var(--olive, #2f4b2b);
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 0.2s ease, background 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .filter-reset-link:hover,
+    .filter-reset-link:focus-visible {
+      background: rgba(47, 75, 43, 0.18);
+      transform: translateY(-1px);
+      outline: none;
+    }
+
+    .filter-section+.filter-section {
+      margin-top: 22px;
+    }
+
+    .filter-section-title {
+      margin-bottom: 12px;
+      font-weight: 800;
+      color: var(--dark, #241b12);
+    }
+
+    .filter-section-title small {
+      color: rgba(36, 27, 18, 0.58);
+      font-weight: 600;
+      text-align: end;
+    }
+
+
+    .filter-type-tabs {
+      display: inline-grid;
+      grid-template-columns: repeat(2, minmax(120px, 1fr));
+      gap: 6px;
+      padding: 6px;
+      margin-bottom: 22px;
+      border-radius: 999px;
+      background: rgba(36, 27, 18, 0.07);
+      border: 1px solid rgba(112, 89, 54, 0.12);
+    }
+
+    .filter-type-tab {
+      border: 0;
+      border-radius: 999px;
+      padding: 12px 18px;
+      background: transparent;
+      color: rgba(36, 27, 18, 0.72);
+      font: inherit;
+      font-weight: 850;
+      cursor: pointer;
+      transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .filter-type-tab:hover,
+    .filter-type-tab:focus-visible {
+      transform: translateY(-1px);
+      outline: none;
+    }
+
+    .filter-type-tab.active,
+    .filter-type-tab[aria-pressed="true"] {
+      background: rgba(47, 75, 43, 0.94);
+      color: #fff8e8;
+      box-shadow: 0 12px 26px rgba(47, 75, 43, 0.18);
+    }
+
+    .filter-section.is-hidden {
+      display: none;
+    }
+
+    .category-chip-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .category-chip {
+      min-height: 96px;
+      border: 1px solid rgba(112, 89, 54, 0.16);
+      border-radius: 22px;
+      padding: 14px;
+      background: rgba(255, 255, 255, 0.68);
+      color: inherit;
+      cursor: pointer;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-template-rows: auto 1fr;
+      align-items: start;
+      gap: 8px;
+      text-align: start;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7);
+      transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+      font: inherit;
+    }
+
+    .category-chip:hover,
+    .category-chip:focus-visible {
+      transform: translateY(-2px);
+      border-color: rgba(47, 75, 43, 0.32);
+      box-shadow: 0 14px 30px rgba(45, 33, 18, 0.1);
+      outline: none;
+    }
+
+    .category-chip.active,
+    .category-chip[aria-pressed="true"] {
+      background: linear-gradient(135deg, rgba(47, 75, 43, 0.95), rgba(76, 104, 55, 0.92));
+      color: #fff8e8;
+      border-color: transparent;
+      box-shadow: 0 18px 42px rgba(47, 75, 43, 0.22);
+    }
+
+    .category-chip-icon {
+      font-size: 1.45rem;
+      line-height: 1;
+    }
+
+    .category-chip-text {
+      grid-column: 1 / -1;
+      align-self: end;
+      font-size: 1rem;
+      font-weight: 850;
+    }
+
+    .category-chip-count {
+      min-width: 30px;
+      height: 30px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(36, 27, 18, 0.08);
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+
+    .category-chip.active .category-chip-count,
+    .category-chip[aria-pressed="true"] .category-chip-count {
+      background: rgba(255, 248, 232, 0.18);
+    }
+
+    .filter-chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .filter-chip-btn {
+      border: 1px solid rgba(112, 89, 54, 0.16);
+      border-radius: 999px;
+      padding: 10px 14px;
+      background: rgba(255, 255, 255, 0.72);
+      color: rgba(36, 27, 18, 0.88);
+      font-weight: 750;
+      cursor: pointer;
+      transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+      font: inherit;
+    }
+
+    .filter-chip-btn:hover,
+    .filter-chip-btn:focus-visible {
+      transform: translateY(-1px);
+      outline: none;
+    }
+
+    .filter-chip-btn.active,
+    .filter-chip-btn[aria-pressed="true"] {
+      background: #b8893d;
+      color: #fffaf0;
+      border-color: transparent;
+    }
+
+    .filter-chip-count {
+      margin-inline-start: 6px;
+      opacity: 0.72;
+      font-weight: 850;
+    }
+
+
+    .filter-match-mode {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+      padding: 10px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.55);
+      border: 1px solid rgba(112, 89, 54, 0.12);
+    }
+
+    .filter-match-label {
+      padding-inline-start: 8px;
+      font-weight: 800;
+      color: rgba(36, 27, 18, 0.72);
+      font-size: 0.92rem;
+    }
+
+    .filter-match-options {
+      display: inline-flex;
+      gap: 6px;
+      padding: 4px;
+      border-radius: 999px;
+      background: rgba(36, 27, 18, 0.06);
+    }
+
+    .filter-match-btn {
+      border: 0;
+      border-radius: 999px;
+      padding: 9px 13px;
+      background: transparent;
+      color: rgba(36, 27, 18, 0.72);
+      font: inherit;
+      font-weight: 800;
+      cursor: pointer;
+      transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .filter-match-btn:hover,
+    .filter-match-btn:focus-visible {
+      transform: translateY(-1px);
+      outline: none;
+    }
+
+    .filter-match-btn.active,
+    .filter-match-btn[aria-pressed="true"] {
+      background: rgba(47, 75, 43, 0.94);
+      color: #fff8e8;
+      box-shadow: 0 10px 22px rgba(47, 75, 43, 0.16);
+    }
+
+    @media (max-width: 860px) {
+
+      .filter-type-tabs {
+        display: inline-grid;
+        grid-template-columns: repeat(2, minmax(120px, 1fr));
+        gap: 6px;
+        padding: 6px;
+        margin-bottom: 22px;
+        border-radius: 999px;
+        background: rgba(36, 27, 18, 0.07);
+        border: 1px solid rgba(112, 89, 54, 0.12);
+      }
+
+      .filter-type-tab {
+        border: 0;
+        border-radius: 999px;
+        padding: 12px 18px;
+        background: transparent;
+        color: rgba(36, 27, 18, 0.72);
+        font: inherit;
+        font-weight: 850;
+        cursor: pointer;
+        transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .filter-type-tab:hover,
+      .filter-type-tab:focus-visible {
+        transform: translateY(-1px);
+        outline: none;
+      }
+
+      .filter-type-tab.active,
+      .filter-type-tab[aria-pressed="true"] {
+        background: rgba(47, 75, 43, 0.94);
+        color: #fff8e8;
+        box-shadow: 0 12px 26px rgba(47, 75, 43, 0.18);
+      }
+
+      .filter-section.is-hidden {
+        display: none;
+      }
+
+      .category-chip-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .filter-panel-header,
+      .filter-section-title {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .filter-section-title small {
+        text-align: start;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .modern-filter-panel {
+        border-radius: 22px;
+        padding: 16px;
+      }
+
+      .filter-type-tabs {
+        display: inline-grid;
+        grid-template-columns: repeat(2, minmax(120px, 1fr));
+        gap: 6px;
+        padding: 6px;
+        margin-bottom: 22px;
+        border-radius: 999px;
+        background: rgba(36, 27, 18, 0.07);
+        border: 1px solid rgba(112, 89, 54, 0.12);
+      }
+
+      .filter-type-tab {
+        border: 0;
+        border-radius: 999px;
+        padding: 12px 18px;
+        background: transparent;
+        color: rgba(36, 27, 18, 0.72);
+        font: inherit;
+        font-weight: 850;
+        cursor: pointer;
+        transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .filter-type-tab:hover,
+      .filter-type-tab:focus-visible {
+        transform: translateY(-1px);
+        outline: none;
+      }
+
+      .filter-type-tab.active,
+      .filter-type-tab[aria-pressed="true"] {
+        background: rgba(47, 75, 43, 0.94);
+        color: #fff8e8;
+        box-shadow: 0 12px 26px rgba(47, 75, 43, 0.18);
+      }
+
+      .filter-section.is-hidden {
+        display: none;
+      }
+
+      .category-chip-grid {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 4px;
+      }
+
+      .category-chip {
+        min-width: 150px;
+        scroll-snap-align: start;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -39,21 +424,73 @@
       <div class="container reveal">
         <p class="eyebrow" data-i18n="menu.eyebrow">Full menu</p>
         <h1 data-i18n="menu.title">Explore our menu</h1>
-        <p data-i18n="menu.subtitle">Filter Syrian dishes, pizza, burgers and drinks by preference or allergy
-          information.</p>
+        <p data-i18n="menu.subtitle">Filter Manakish, Fatayer, plates, pizza and drinks by category or preference.</p>
       </div>
     </section>
 
     <section class="section container">
-      <div class="filters reveal" aria-label="Menu filters">
-        <button class="filter-btn active" data-filter="all" data-i18n="filter.all">All</button>
-        <button class="filter-btn" data-filter="vegan" data-i18n="filter.vegan">Vegan</button>
-        <button class="filter-btn" data-filter="chicken" data-i18n="filter.chicken">Chicken</button>
-        <button class="filter-btn" data-filter="meat" data-i18n="filter.meat">Meat</button>
-        <button class="filter-btn" data-filter="allergy" data-i18n="filter.allergy">Allergy filters</button>
-        <button class="filter-btn" data-filter="pizza" data-i18n="filter.pizza">Pizza</button>
-        <button class="filter-btn" data-filter="burger" data-i18n="filter.burger">Burger</button>
-        <button class="filter-btn" data-filter="drinks" data-i18n="filter.drinks">Drinks</button>
+      <div class="menu-filter-panel modern-filter-panel reveal" aria-label="Menu filters">
+        <div class="filter-panel-header">
+          <div>
+            <p class="eyebrow" data-i18n="filter.refineEyebrow">Filter the menu</p>
+            <h2 data-i18n="filter.refineTitle">Find the right item fast</h2>
+          </div>
+          <button class="filter-reset-link" type="button" id="clear-filters" data-i18n="filter.clear">Clear
+            filters</button>
+        </div>
+
+        <div class="filter-type-tabs" role="group" aria-label="Food or drinks">
+          <button class="filter-type-tab active" type="button" data-menu-type="food" aria-pressed="true"
+            data-i18n="filter.food">Food</button>
+          <button class="filter-type-tab" type="button" data-menu-type="drinks" aria-pressed="false"
+            data-i18n="filter.drinks">Drinks</button>
+        </div>
+
+        <div class="filter-section" id="food-category-section">
+          <div class="filter-section-title">
+            <span data-i18n="filter.categories">Categories</span>
+            <small id="category-filter-summary" data-i18n="filter.allCategories">All categories</small>
+          </div>
+          <div class="category-chip-grid" id="category-filter-options" role="group" aria-label="Menu categories">
+            <button class="category-chip" type="button" data-filter="manakish" aria-pressed="false">
+              <span class="category-chip-icon">🌕</span>
+              <span class="category-chip-text" data-i18n="filter.manakish">Manakish</span>
+              <span class="category-chip-count" data-count-for="manakish">0</span>
+            </button>
+            <button class="category-chip" type="button" data-filter="fatayer" aria-pressed="false">
+              <span class="category-chip-icon">🥟</span>
+              <span class="category-chip-text" data-i18n="filter.fatayer">Fatayer</span>
+              <span class="category-chip-count" data-count-for="fatayer">0</span>
+            </button>
+            <button class="category-chip" type="button" data-filter="pizza" aria-pressed="false">
+              <span class="category-chip-icon">🍕</span>
+              <span class="category-chip-text" data-i18n="filter.pizza">Pizza</span>
+              <span class="category-chip-count" data-count-for="pizza">0</span>
+            </button>
+            <button class="category-chip" type="button" data-filter="teller" aria-pressed="false">
+              <span class="category-chip-icon">🍽️</span>
+              <span class="category-chip-text" data-i18n="filter.teller">Plates</span>
+              <span class="category-chip-count" data-count-for="teller">0</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="filter-section filter-section-tags">
+          <div class="filter-section-title">
+            <span data-i18n="filter.available">Available filters</span>
+            <small data-i18n="filter.availableHint">Based on selected categories</small>
+          </div>
+          <div class="filter-match-mode" aria-label="Filter match mode">
+            <span class="filter-match-label" data-i18n="filter.matchMode">Match selected filters</span>
+            <div class="filter-match-options" role="group">
+              <button class="filter-match-btn active" type="button" data-match-mode="any" aria-pressed="true"
+                data-i18n="filter.matchAny">Include any</button>
+              <button class="filter-match-btn" type="button" data-match-mode="all" aria-pressed="false"
+                data-i18n="filter.matchAll">Include all</button>
+            </div>
+          </div>
+          <div class="filter-chip-row" id="tag-filter-options" role="group" aria-label="Available menu filters"></div>
+        </div>
       </div>
 
       <div id="menu-status" class="menu-status" aria-live="polite"></div>
