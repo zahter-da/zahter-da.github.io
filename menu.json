@@ -14,7 +14,8 @@
     },
     "price": "7,50 €",
     "tags": ["vegetarian"],
-    "allergens": ["gluten"]
+    "allergens": ["gluten"],
+    "image": "assets/menu/teller/falafel-teller.webp"
   },
   {
     "id": "foul-mit-joghurt",
@@ -31,7 +32,8 @@
     },
     "price": "7,50 €",
     "tags": ["vegetarian"],
-    "allergens": ["dairy"]
+    "allergens": ["dairy"],
+    "image": "assets/menu/teller/foul-mit-joghurt.webp"
   },
   {
     "id": "musabbaha",
@@ -48,7 +50,8 @@
     },
     "price": "7,50 €",
     "tags": ["vegan", "vegetarian"],
-    "allergens": []
+    "allergens": [],
+    "image": "assets/menu/teller/musabbaha.webp"
   },
   {
     "id": "hummus",
@@ -65,7 +68,8 @@
     },
     "price": "7,50 €",
     "tags": ["vegan", "vegetarian"],
-    "allergens": []
+    "allergens": [],
+    "image": "assets/menu/teller/hummus.webp"
   },
   {
     "id": "fatteh-klein",
@@ -82,7 +86,8 @@
     },
     "price": "7,50 €",
     "tags": ["vegetarian"],
-    "allergens": ["gluten", "dairy", "nuts"]
+    "allergens": ["gluten", "dairy", "nuts"],
+    "image": "assets/menu/teller/fatteh-klein.webp"
   },
   {
     "id": "fatteh-gross",
@@ -99,7 +104,8 @@
     },
     "price": "9,50 €",
     "tags": ["vegetarian"],
-    "allergens": ["gluten", "dairy", "nuts"]
+    "allergens": ["gluten", "dairy", "nuts"],
+    "image": "assets/menu/teller/fatteh-gross.webp"
   },
   {
     "id": "eier-mit-sucuk",
@@ -116,7 +122,8 @@
     },
     "price": "7,50 €",
     "tags": ["meat"],
-    "allergens": []
+    "allergens": [],
+    "image": "assets/menu/teller/eier-mit-sucuk.webp"
   },
   {
     "id": "ruehrei",
@@ -133,7 +140,8 @@
     },
     "price": "6,50 €",
     "tags": ["vegetarian"],
-    "allergens": []
+    "allergens": [],
+    "image": "assets/menu/teller/ruehrei.webp"
   },
   {
     "id": "gemueseteller",
@@ -150,7 +158,8 @@
     },
     "price": "3,50 €",
     "tags": ["vegan", "vegetarian"],
-    "allergens": []
+    "allergens": [],
+    "image": "assets/menu/teller/gemueseteller.webp"
   },
   {
     "id": "falafel-mini",
@@ -167,7 +176,8 @@
     },
     "price": "3,00 €",
     "tags": ["vegetarian"],
-    "allergens": ["gluten"]
+    "allergens": ["gluten"],
+    "image": "assets/menu/teller/falafel-mini.webp"
   },
   {
     "id": "foul-mit-kichererbsen",
@@ -184,7 +194,8 @@
     },
     "price": "7,00 €",
     "tags": ["vegan", "vegetarian"],
-    "allergens": []
+    "allergens": [],
+    "image": "assets/menu/teller/foul-mit-kichererbsen.webp"
   },
   {
     "id": "zatar",
@@ -201,7 +212,8 @@
     },
     "price": "2,00 €",
     "tags": ["vegan", "vegetarian"],
-    "allergens": ["gluten"]
+    "allergens": ["gluten"],
+    "image": "assets/menu/manakish/zatar.png"
   },
   {
     "id": "zatar-mit-kaese",
@@ -218,7 +230,8 @@
     },
     "price": "2,50 €",
     "tags": ["vegetarian"],
-    "allergens": ["gluten", "dairy"]
+    "allergens": ["gluten", "dairy"],
+    "image": "assets/menu/manakish/zatar-mit-kaese.png"
   },
   {
     "id": "zatar-mit-gemuese",
@@ -235,7 +248,8 @@
     },
     "price": "3,50 €",
     "tags": ["vegetarian"],
-    "allergens": ["gluten"]
+    "allergens": ["gluten"],
+    "image": "assets/menu/manakish/zatar-mit-gemuese.png"
   },
   {
     "id": "zatar-mit-muhammara",
@@ -252,7 +266,8 @@
     },
     "price": "3,00 €",
     "tags": ["vegetarian", "spicy"],
-    "allergens": ["gluten", "nuts"]
+    "allergens": ["gluten", "nuts"],
+    "image": "assets/menu/manakish/zatar-mit-muhammara.png"
   },
   {
     "id": "zatar-muhammara-kaese",
@@ -269,7 +284,8 @@
     },
     "price": "3,50 €",
     "tags": ["vegetarian", "spicy"],
-    "allergens": ["gluten", "dairy", "nuts"]
+    "allergens": ["gluten", "dairy", "nuts"],
+    "image": "assets/menu/manakish/zatar-muhammara-kaese.png"
   },
   {
     "id": "muhammara",
@@ -286,7 +302,8 @@
     },
     "price": "2,00 €",
     "tags": ["vegan", "vegetarian", "spicy"],
-    "allergens": ["gluten", "nuts"]
+    "allergens": ["gluten", "nuts"],
+    "image": "assets/menu/manakish/muhammara.png"
   },
   {
     "id": "muhammara-mit-kaese",
@@ -303,7 +320,8 @@
     },
     "price": "2,50 €",
     "tags": ["vegetarian", "spicy"],
-    "allergens": ["gluten", "dairy", "nuts"]
+    "allergens": ["gluten", "dairy", "nuts"],
+    "image": "assets/menu/manakish/muhammara-mit-kaese.webp"
   },
   {
     "id": "akkawi-kaese",
@@ -320,7 +338,8 @@
     },
     "price": "2,50 €",
     "tags": ["vegetarian"],
-    "allergens": ["gluten", "dairy"]
+    "allergens": ["gluten", "dairy"],
+    "image": "assets/menu/manakish/akkawi-kaese.webp"
   },
   {
     "id": "kashkawan-kaese",
@@ -337,7 +356,8 @@
     },
     "price": "2,50 €",
     "tags": ["vegetarian"],
-    "allergens": ["gluten", "dairy"]
+    "allergens": ["gluten", "dairy"],
+    "image": "assets/menu/manakish/kashkawan-kaese.webp"
   },
   {
     "id": "shish-mit-kaese",
@@ -354,7 +374,8 @@
     },
     "price": "3,00 €",
     "tags": ["chicken"],
-    "allergens": ["gluten", "dairy"]
+    "allergens": ["gluten", "dairy"],
+    "image": "assets/menu/manakish/shish-mit-kaese.webp"
   },
   {
     "id": "suflha",
@@ -371,7 +392,8 @@
     },
     "price": "2,50 €",
     "tags": ["meat"],
-    "allergens": ["gluten"]
+    "allergens": ["gluten"],
+    "image": "assets/menu/manakish/suflha.webp"
   },
   {
     "id": "suflha-joghurt",
@@ -388,7 +410,8 @@
     },
     "price": "3,00 €",
     "tags": ["meat"],
-    "allergens": ["gluten", "dairy"]
+    "allergens": ["gluten", "dairy"],
+    "image": "assets/menu/manakish/suflha-joghurt.webp"
   },
   {
     "id": "suflha-granatapfel",
@@ -405,7 +428,8 @@
     },
     "price": "3,00 €",
     "tags": ["meat"],
-    "allergens": ["gluten"]
+    "allergens": ["gluten"],
+    "image": "assets/menu/manakish/suflha-granatapfel.webp"
   },
   {
     "id": "suflha-kaese",
@@ -422,7 +446,8 @@
     },
     "price": "3,50 €",
     "tags": ["meat"],
-    "allergens": ["gluten", "dairy"]
+    "allergens": ["gluten", "dairy"],
+    "image": "assets/menu/manakish/suflha-kaese.webp"
   },
   {
     "id": "lahmajin-antap",
@@ -439,7 +464,8 @@
     },
     "price": "2,50 €",
     "tags": ["meat"],
-    "allergens": ["gluten"]
+    "allergens": ["gluten"],
+    "image": "assets/menu/manakish/lahmajin-antap.webp"
   },
   {
     "id": "tushka",
@@ -456,7 +482,8 @@
     },
     "price": "3,50 €",
     "tags": ["meat"],
-    "allergens": ["gluten", "dairy"]
+    "allergens": ["gluten", "dairy"],
+    "image": "assets/menu/manakish/tushka.webp"
   },
   {
     "id": "salami-manakish",
@@ -473,7 +500,8 @@
     },
     "price": "2,50 €",
     "tags": ["meat"],
-    "allergens": ["gluten", "dairy"]
+    "allergens": ["gluten", "dairy"],
+    "image": "assets/menu/manakish/salami-manakish.webp"
   },
   {
     "id": "fleisch-scheiben",
@@ -490,7 +518,8 @@
     },
     "price": "4,50 €",
     "tags": ["meat", "beef"],
-    "allergens": ["gluten"]
+    "allergens": ["gluten"],
+    "image": "assets/menu/manakish/fleisch-scheiben.webp"
   },
   {
     "id": "hausgemachte-sucuk",
@@ -507,7 +536,8 @@
     },
     "price": "3,00 €",
     "tags": ["meat"],
-    "allergens": ["gluten"]
+    "allergens": ["gluten"],
+    "image": "assets/menu/manakish/hausgemachte-sucuk.webp"
   },
   {
     "id": "martadella-manakish",
@@ -524,7 +554,8 @@
     },
     "price": "3,00 €",
     "tags": ["chicken"],
-    "allergens": ["gluten"]
+    "allergens": ["gluten"],
+    "image": "assets/menu/manakish/martadella-manakish.webp"
   },
   {
     "id": "pizza-margherita",
@@ -541,7 +572,8 @@
     },
     "price": "9,00 €",
     "tags": ["pizza", "vegetarian"],
-    "allergens": ["gluten", "dairy"]
+    "allergens": ["gluten", "dairy"],
+    "image": "assets/menu/pizza/margherita.webp"
   },
   {
     "id": "pizza-vegetarisch",
@@ -558,7 +590,8 @@
     },
     "price": "11,00 €",
     "tags": ["pizza", "vegetarian"],
-    "allergens": ["gluten", "dairy"]
+    "allergens": ["gluten", "dairy"],
+    "image": "assets/menu/pizza/vegetarisch.webp"
   },
   {
     "id": "pizza-martadella",
@@ -575,7 +608,8 @@
     },
     "price": "10,50 €",
     "tags": ["pizza", "chicken"],
-    "allergens": ["gluten", "dairy"]
+    "allergens": ["gluten", "dairy"],
+    "image": "assets/menu/pizza/martadella.webp"
   },
   {
     "id": "pizza-spinat",
@@ -592,7 +626,8 @@
     },
     "price": "10,50 €",
     "tags": ["pizza", "vegetarian"],
-    "allergens": ["gluten", "dairy"]
+    "allergens": ["gluten", "dairy"],
+    "image": "assets/menu/pizza/spinat.webp"
   },
   {
     "id": "pizza-vier-jahreszeiten",
@@ -609,7 +644,8 @@
     },
     "price": "11,00 €",
     "tags": ["pizza"],
-    "allergens": ["gluten", "dairy"]
+    "allergens": ["gluten", "dairy"],
+    "image": "assets/menu/pizza/vier-jahreszeiten.webp"
   },
   {
     "id": "pizza-haehnchen",
@@ -626,7 +662,8 @@
     },
     "price": "11,00 €",
     "tags": ["pizza", "chicken"],
-    "allergens": ["gluten", "dairy"]
+    "allergens": ["gluten", "dairy"],
+    "image": "assets/menu/pizza/haehnchen.webp"
   },
   {
     "id": "pizza-sucuk",
@@ -643,7 +680,8 @@
     },
     "price": "10,00 €",
     "tags": ["pizza", "meat"],
-    "allergens": ["gluten", "dairy"]
+    "allergens": ["gluten", "dairy"],
+    "image": "assets/menu/pizza/sucuk.webp"
   },
   {
     "id": "pizza-salami",
@@ -660,7 +698,8 @@
     },
     "price": "10,00 €",
     "tags": ["pizza", "meat"],
-    "allergens": ["gluten", "dairy"]
+    "allergens": ["gluten", "dairy"],
+    "image": "assets/menu/pizza/salami.webp"
   },
   {
     "id": "pizza-champignons",
@@ -677,7 +716,8 @@
     },
     "price": "10,00 €",
     "tags": ["pizza", "vegetarian"],
-    "allergens": ["gluten", "dairy"]
+    "allergens": ["gluten", "dairy"],
+    "image": "assets/menu/pizza/champignons.webp"
   },
   {
     "id": "fatayer-sucuk",
@@ -694,7 +734,8 @@
     },
     "price": "2,50 €",
     "tags": ["meat"],
-    "allergens": ["gluten", "dairy"]
+    "allergens": ["gluten", "dairy"],
+    "image": "assets/menu/fatayer/sucuk.png"
   },
   {
     "id": "fatayer-martadella",
@@ -711,7 +752,8 @@
     },
     "price": "2,50 €",
     "tags": ["chicken"],
-    "allergens": ["gluten"]
+    "allergens": ["gluten"],
+    "image": "assets/menu/fatayer/martadella.png"
   },
   {
     "id": "fatayer-oliven",
@@ -728,7 +770,8 @@
     },
     "price": "2,50 €",
     "tags": ["vegetarian"],
-    "allergens": ["gluten"]
+    "allergens": ["gluten"],
+    "image": "assets/menu/fatayer/oliven.png"
   },
   {
     "id": "fatayer-labne",
@@ -745,7 +788,8 @@
     },
     "price": "2,50 €",
     "tags": ["vegetarian"],
-    "allergens": ["gluten", "dairy"]
+    "allergens": ["gluten", "dairy"],
+    "image": "assets/menu/fatayer/labne.png"
   },
   {
     "id": "fatayer-labne-zatar",
@@ -762,7 +806,8 @@
     },
     "price": "3,50 €",
     "tags": ["vegetarian"],
-    "allergens": ["gluten", "dairy"]
+    "allergens": ["gluten", "dairy"],
+    "image": "assets/menu/fatayer/labne-zatar.png"
   },
   {
     "id": "fatayer-labne-gemuese",
@@ -779,7 +824,8 @@
     },
     "price": "3,50 €",
     "tags": ["vegetarian"],
-    "allergens": ["gluten", "dairy"]
+    "allergens": ["gluten", "dairy"],
+    "image": "assets/menu/fatayer/labne-gemuese.png"
   },
   {
     "id": "fatayer-akkawi-oliven",
@@ -796,7 +842,8 @@
     },
     "price": "3,00 €",
     "tags": ["vegetarian"],
-    "allergens": ["gluten", "dairy"]
+    "allergens": ["gluten", "dairy"],
+    "image": "assets/menu/fatayer/akkawi-oliven.png"
   },
   {
     "id": "fatayer-akkawi-tomaten",
@@ -813,7 +860,8 @@
     },
     "price": "3,00 €",
     "tags": ["vegetarian"],
-    "allergens": ["gluten", "dairy"]
+    "allergens": ["gluten", "dairy"],
+    "image": "assets/menu/fatayer/akkawi-tomaten.webp"
   },
   {
     "id": "fatayer-akkawi-spinat",
@@ -830,7 +878,8 @@
     },
     "price": "3,00 €",
     "tags": ["vegetarian"],
-    "allergens": ["gluten", "dairy"]
+    "allergens": ["gluten", "dairy"],
+    "image": "assets/menu/fatayer/akkawi-spinat.webp"
   },
   {
     "id": "fatayer-spinat",
@@ -847,7 +896,8 @@
     },
     "price": "2,50 €",
     "tags": ["vegan", "vegetarian"],
-    "allergens": ["gluten"]
+    "allergens": ["gluten"],
+    "image": "assets/menu/fatayer/spinat.webp"
   },
   {
     "id": "fatayer-spinat-kaese",
@@ -864,7 +914,8 @@
     },
     "price": "3,00 €",
     "tags": ["vegetarian"],
-    "allergens": ["gluten", "dairy"]
+    "allergens": ["gluten", "dairy"],
+    "image": "assets/menu/fatayer/spinat-kaese.webp"
   },
   {
     "id": "drink-fanta",
@@ -881,7 +932,8 @@
     },
     "price": "2,50 €",
     "tags": ["drinks", "vegan", "cold", "with-gas"],
-    "allergens": []
+    "allergens": [],
+    "image": "assets/menu/drinks/fanta.webp"
   },
   {
     "id": "drink-sprite",
@@ -898,7 +950,8 @@
     },
     "price": "2,50 €",
     "tags": ["drinks", "vegan", "cold", "with-gas"],
-    "allergens": []
+    "allergens": [],
+    "image": "assets/menu/drinks/sprite.webp"
   },
   {
     "id": "drink-cola",
@@ -915,7 +968,8 @@
     },
     "price": "2,50 €",
     "tags": ["drinks", "vegan", "cold", "with-gas"],
-    "allergens": []
+    "allergens": [],
+    "image": "assets/menu/drinks/cola.webp"
   },
   {
     "id": "drink-wasser",
@@ -932,7 +986,8 @@
     },
     "price": "1,50 €",
     "tags": ["drinks", "vegan", "cold"],
-    "allergens": []
+    "allergens": [],
+    "image": "assets/menu/drinks/wasser.webp"
   },
   {
     "id": "drink-ayran",
@@ -949,7 +1004,8 @@
     },
     "price": "2,00 €",
     "tags": ["drinks", "vegetarian", "cold"],
-    "allergens": ["dairy"]
+    "allergens": ["dairy"],
+    "image": "assets/menu/drinks/ayran.webp"
   },
   {
     "id": "drink-capri-sonne",
@@ -966,7 +1022,8 @@
     },
     "price": "1,50 €",
     "tags": ["drinks", "vegan", "cold"],
-    "allergens": []
+    "allergens": [],
+    "image": "assets/menu/drinks/capri-sonne.webp"
   },
   {
     "id": "drink-eistee",
@@ -983,7 +1040,8 @@
     },
     "price": "1,50 €",
     "tags": ["drinks", "vegan", "cold"],
-    "allergens": []
+    "allergens": [],
+    "image": "assets/menu/drinks/eistee.webp"
   },
   {
     "id": "drink-mokka",
@@ -1000,7 +1058,8 @@
     },
     "price": "2,00 €",
     "tags": ["drinks", "vegan", "hot"],
-    "allergens": []
+    "allergens": [],
+    "image": "assets/menu/drinks/mokka.webp"
   },
   {
     "id": "drink-black-tea",
@@ -1017,6 +1076,7 @@
     },
     "price": "2,00 €",
     "tags": ["drinks", "vegan", "hot"],
-    "allergens": []
+    "allergens": [],
+    "image": "assets/menu/drinks/black-tea.webp"
   }
 ]
